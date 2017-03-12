@@ -9,8 +9,9 @@ Please [refer to this](https://github.com/abhirockzz/kafka-streams-example/blob/
 
 - Start the Kafka broker. Configure `num.partitions` in Kafka broker `server.properties` file to 5 (to experiment with this application)
 - [Clone the producer application](https://github.com/abhirockzz/kafka-streams-example/tree/master/kafka-producer) & build it `mvn clean install`
-- Trigger producer application - `java -jar kafka-cpu-metrics-producer.jar`. It will start emitting records to Kafka
-- Containerize - `docker build -t abhirockzz/docker-kafka-streams` (you can obviously choose a repo name of your choice)
+- Clone & build the stream processing application (this one) - `mvn clean install`
+- Containerize the application using `docker build -t abhirockzz/docker-kafka-streams` (you can obviously choose a repo name of your choice)
+- Start the producer application - `java -jar kafka-cpu-metrics-producer.jar`. It will start pushing records to Kafka
 - Start one instance of consumer application - `docker run --rm --name consumer-1 -it -P -e KAFKA_BROKER=<kafka broker host:port> -e ZOOKEEPER=<zookeeper host:port> abhirockzz/docker-kafka-streams`. It will start calculating the moving average of machine CPU metrics
 - We used `-P` option with `docker run`, so a random host port will be bound with the application port (which is hard coded to 8080, but it shouldn't matter). To find the port of the current container execute `docker port consumer-1` (where `consumer-1` is the name of the container)
 - Access the metrics on this instance - `http://docker-ip:port/metrics`  e.g. `http://192.168.99.100:32768/metrics`. The JSON response will contain information about which node (docker container instance) has processed that particular machine metric
