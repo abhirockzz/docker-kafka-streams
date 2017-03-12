@@ -1,7 +1,7 @@
 A [Kafka Streams](https://kafka.apache.org/documentation/streams) based microservice which is similar to one of my [previous examples](https://github.com/abhirockzz/kafka-streams-example), but with the following differences
 
-- the Kafka streams based microservice will now run on a Docker container
-- you can horizontally scale out your processing by starting new Docker containers
+- the Kafka streams based microservice will now run in Docker containers
+- you can horizontally scale out your processing by starting new containers
 
 Please [refer to this](https://github.com/abhirockzz/kafka-streams-example/blob/master/README.md#basics) to get some background
 
