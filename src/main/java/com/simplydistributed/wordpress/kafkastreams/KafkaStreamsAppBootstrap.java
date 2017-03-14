@@ -1,6 +1,6 @@
-package com.oracle.cloud.accs.kafkastreams;
+package com.simplydistributed.wordpress.kafkastreams;
 
-import com.oracle.cloud.accs.kafkastreams.rest.MetricsResource;
+import com.simplydistributed.wordpress.kafkastreams.rest.MetricsResource;
 import java.io.IOException;
 import java.net.URI;
 import java.util.Random;

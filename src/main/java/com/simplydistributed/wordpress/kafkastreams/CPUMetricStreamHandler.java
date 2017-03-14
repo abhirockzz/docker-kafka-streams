@@ -1,4 +1,4 @@
-package com.oracle.cloud.accs.kafkastreams;
+package com.simplydistributed.wordpress.kafkastreams;
 
 import java.util.HashMap;
 import java.util.Map;

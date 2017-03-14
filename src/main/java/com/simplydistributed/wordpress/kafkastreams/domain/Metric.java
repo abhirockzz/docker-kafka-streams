@@ -1,4 +1,4 @@
-package com.oracle.cloud.accs.kafkastreams.domain;
+package com.simplydistributed.wordpress.kafkastreams.domain;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

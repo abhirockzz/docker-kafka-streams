@@ -1,9 +1,9 @@
-package com.oracle.cloud.accs.kafkastreams.rest;
+package com.simplydistributed.wordpress.kafkastreams.rest;
 
-import com.oracle.cloud.accs.kafkastreams.CPUMetricStreamHandler;
-import com.oracle.cloud.accs.kafkastreams.GlobalAppState;
-import com.oracle.cloud.accs.kafkastreams.Utils;
-import com.oracle.cloud.accs.kafkastreams.domain.Metrics;
+import com.simplydistributed.wordpress.kafkastreams.CPUMetricStreamHandler;
+import com.simplydistributed.wordpress.kafkastreams.GlobalAppState;
+import com.simplydistributed.wordpress.kafkastreams.Utils;
+import com.simplydistributed.wordpress.kafkastreams.domain.Metrics;
 import java.util.concurrent.TimeUnit;
 
 import java.util.function.Consumer;

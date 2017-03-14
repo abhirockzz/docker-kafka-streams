@@ -1,6 +1,6 @@
-package com.oracle.cloud.accs.kafkastreams;
+package com.simplydistributed.wordpress.kafkastreams;
 
-import com.oracle.cloud.accs.kafkastreams.domain.Metrics;
+import com.simplydistributed.wordpress.kafkastreams.domain.Metrics;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;

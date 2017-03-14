@@ -1,4 +1,4 @@
-package com.oracle.cloud.accs.kafkastreams;
+package com.simplydistributed.wordpress.kafkastreams;
 
 import org.apache.kafka.streams.KafkaStreams;
 import org.apache.kafka.streams.state.HostInfo;
